@@ -1,0 +1,27 @@
+.sort__visualizer {
+	display: grid;
+	justify-items: center;
+	gap: 2em;
+	padding: 30px;
+}
+
+.sort__container {
+	display: flex;
+	height: 50vh;
+	background: #000;
+	background-size: contain;
+	align-items: flex-end;
+	width: 80%;
+	border: 5px solid #fff;
+}
+
+.sort__container--element {
+	background-color: #002224;
+	border: 3px solid #8df5fb;
+	width: 100%;
+}
+
+.sort__counter {
+	color: #fff;
+	font-family: Arvo, sans-serif;
+}
