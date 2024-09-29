@@ -1,3 +1,5 @@
+# ROADMAP
+
 ## FIX
 
 - initialCount
@@ -8,5 +10,6 @@
 - fonts
 - 5 sorts
 - design
-- algos
 - OG
+- docs/
+- icons

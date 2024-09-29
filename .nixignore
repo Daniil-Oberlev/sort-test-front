@@ -1,0 +1,10 @@
+.husky/
+docs/
+.eslintrc.json
+.gitignore
+.prettierignore
+.prettierrc
+package-lock.json
+package.json
+roadmap.md
+yarn.lock
