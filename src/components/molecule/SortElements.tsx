@@ -1,5 +1,5 @@
 import { ISortElements } from '@/interfaces/interface'
-import '@/styles/sortVisualizer.css'
+import '@/styles/sortVisualizer.scss'
 
 export const SortElements: React.FC<ISortElements> = ({ items }) => {
 	return (
