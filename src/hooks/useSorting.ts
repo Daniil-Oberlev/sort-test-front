@@ -1,12 +1,13 @@
 import { useSort, useSortState } from "@/hooks/sortingHooks";
+import { SortStep } from "@/interfaces/interface";
 import { generateRandomSizes, isSorted } from "@/utils/sortingUtils";
 import { useCallback, useEffect } from "react";
 
 const useSorting = (
   sortStepFunction: (
     arr: number[],
-    step: { i: number; j: number },
-  ) => { sortedArray: number[]; step: { i: number; j: number } },
+    step: SortStep,
+  ) => { sortedArray: number[]; step: SortStep },
   initialCount: number,
 ) => {
   const { state, setState, reset } = useSortState(
@@ -26,8 +27,14 @@ const useSorting = (
     startSort();
   }, [reset, startSort]);
 
-  useSort(state, setState, (arr, step) => {
-    const { sortedArray, step: newStep } = sortStepFunction(arr, step);
+  useSort(state, setState, (arr: number[], step: SortStep) => {
+    const j = step.j !== undefined ? step.j : 0;
+
+    const { sortedArray, step: newStep } = sortStepFunction(arr, {
+      ...step,
+      j,
+    });
+
     setState((prevState) => ({
       ...prevState,
       items: sortedArray,
@@ -37,6 +44,7 @@ const useSorting = (
 
     return { sortedArray, step: newStep };
   });
+
   return { state };
 };
 

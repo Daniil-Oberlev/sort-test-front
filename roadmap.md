@@ -8,7 +8,6 @@
 
 - +env-file
 - fonts
-- 5 sorts
 - design
 - OG
 - docs/
