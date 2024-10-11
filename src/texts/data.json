@@ -1,142 +1,92 @@
 {
-	"binary_insertion": {
-		"title": "Binary Insertion Sort",
-		"description": "Функция binaryInsertionSort сортирует массив с помощью алгоритма сортировки вставками, используя бинарный поиск для определения позиции вставки.",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n log n)",
-			"average": "O(n²)",
-			"space": "O(1)"
-		},
-		"stable": "да",
-		"inPlace": "да",
-		"useCases": "почти отсортированные массивы",
-		"bestFor": "небольшие массивы"
-	},
-	"bogo": {
-		"title": "Bogo Sort",
-		"description": "Функция bogoSort сортирует массив с использованием вероятностного алгоритма, который генерирует случайные перестановки элементов до тех пор, пока массив не окажется отсортированным.",
-		"complexity": {
-			"worst": "O(n!)",
-			"best": "O(n)",
-			"average": "O((n+1)!)",
-			"space": "O(1)"
-		},
-		"stable": "нет",
-		"inPlace": "да",
-		"useCases": "не используется",
-		"bestFor": "неизвестно"
-	},
-	"bubble": {
-		"title": "Bubble Sort",
-		"description": "Функция bubbleSort сортирует массив с помощью алгоритма пузырьковой сортировки.",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n)",
-			"average": "O(n²)",
-			"space": "O(1)"
-		},
-		"stable": "да",
-		"inPlace": "да",
-		"useCases": "небольшие массивы",
-		"bestFor": "почти отсортированные массивы"
-	},
-	"exchange": {
-		"title": "Exchange Sort",
-		"description": "Функция exchangeSort сортирует массив с помощью алгоритма сортировки обменом.",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n)",
-			"average": "O(n²)",
-			"space": "O(1)"
-		},
-		"stable": "нет",
-		"inPlace": "да",
-		"useCases": "небольшие массивы",
-		"bestFor": "неизвестно"
-	},
-	"insertion": {
-		"title": "Insertion Sort",
-		"description": "Функция insertionSort сортирует массив с помощью алгоритма сортировки вставками.",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n)",
-			"average": "O(n²)",
-			"space": "O(1)"
-		},
-		"stable": "да",
-		"inPlace": "да",
-		"useCases": "почти отсортированные массивы",
-		"bestFor": "небольшие массивы"
-	},
-	"optimized_bubble": {
-		"title": "Optimized Bubble Sort",
-		"description": "Функция optimizedBubbleSort сортирует массив с помощью улучшенного алгоритма пузырьковой сортировки.",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n)",
-			"average": "O(n²)",
-			"space": "O(1)"
-		},
-		"stable": "да",
-		"inPlace": "да",
-		"useCases": "небольшие массивы",
-		"bestFor": "почти отсортированные массивы"
-	},
-	"quick": {
-		"title": "Quick Sort",
-		"description": "Функция quickSort сортирует массив с помощью алгоритма быстрой сортировки.",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n log n)",
-			"average": "O(n log n)",
-			"space": "O(log n)"
-		},
-		"stable": "нет",
-		"inPlace": "да",
-		"useCases": "большие массивы",
-		"bestFor": "случайно распределенные массивы"
-	},
-	"selection": {
-		"title": "Selection Sort",
-		"description": "Функция selectionSort сортирует массив с помощью алгоритма сортировки выбором.",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n²)",
-			"average": "O(n²)",
-			"space": "O(1)"
-		},
-		"stable": "нет",
-		"inPlace": "да",
-		"useCases": "небольшие массивы",
-		"bestFor": "простой код"
-	},
-	"shaker": {
-		"title": "Shaker Sort",
-		"description": "Функция shakerSort сортирует массив с помощью алгоритма шейкерной сортировки.",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n)",
-			"average": "O(n²)",
-			"space": "O(1)"
-		},
-		"stable": "да",
-		"inPlace": "да",
-		"useCases": "небольшие массивы",
-		"bestFor": "почти отсортированные массивы"
-	},
-	"shell": {
-		"title": "Shell Sort",
-		"description": "Функция shellSort сортирует массив с помощью алгоритма Shell Sort, который является улучшенной версией сортировки вставками, используя уменьшение шага (gap).",
-		"complexity": {
-			"worst": "O(n²)",
-			"best": "O(n log n)",
-			"average": "O(n log n)",
-			"space": "O(1)"
-		},
-		"stable": "нет",
-		"inPlace": "да",
-		"useCases": "большие массивы",
-		"bestFor": "случайно распределенные массивы"
-	}
+  "binary_insertion": {
+    "title": "Binary Insertion Sort",
+    "description": "Функция binaryInsertionSort сортирует массив с помощью алгоритма сортировки вставками, используя бинарный поиск для определения позиции вставки.",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n log n)",
+      "average": "O(n²)"
+    }
+  },
+  "bogo": {
+    "title": "Bogo Sort",
+    "description": "Функция bogoSort сортирует массив с использованием вероятностного алгоритма, который генерирует случайные перестановки элементов до тех пор, пока массив не окажется отсортированным.",
+    "complexity": {
+      "worst": "O(n!)",
+      "best": "O(n)",
+      "average": "O((n+1)!)"
+    }
+  },
+  "bubble": {
+    "title": "Bubble Sort",
+    "description": "Функция bubbleSort сортирует массив с помощью алгоритма пузырьковой сортировки.",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n)",
+      "average": "O(n²)"
+    }
+  },
+  "exchange": {
+    "title": "Exchange Sort",
+    "description": "Функция exchangeSort сортирует массив с помощью алгоритма сортировки обменом.",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n)",
+      "average": "O(n²)"
+    }
+  },
+  "insertion": {
+    "title": "Insertion Sort",
+    "description": "Функция insertionSort сортирует массив с помощью алгоритма сортировки вставками.",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n)",
+      "average": "O(n²)"
+    }
+  },
+  "optimized_bubble": {
+    "title": "Optimized Bubble Sort",
+    "description": "Функция optimizedBubbleSort сортирует массив с помощью улучшенного алгоритма пузырьковой сортировки.",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n)",
+      "average": "O(n²)"
+    }
+  },
+  "quick": {
+    "title": "Quick Sort",
+    "description": "Функция quickSort сортирует массив с помощью алгоритма быстрой сортировки.",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n log n)",
+      "average": "O(n log n)"
+    }
+  },
+  "selection": {
+    "title": "Selection Sort",
+    "description": "Функция selectionSort сортирует массив с помощью алгоритма сортировки выбором.",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n²)",
+      "average": "O(n²)"
+    }
+  },
+  "shaker": {
+    "title": "Shaker Sort",
+    "description": "Функция shakerSort сортирует массив с помощью алгоритма шейкерной сортировки.",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n)",
+      "average": "O(n²)"
+    }
+  },
+  "shell": {
+    "title": "Shell Sort",
+    "description": "Функция shellSort сортирует массив с помощью алгоритма Shell Sort, который является улучшенной версией сортировки вставками, используя уменьшение шага (gap).",
+    "complexity": {
+      "worst": "O(n²)",
+      "best": "O(n log n)",
+      "average": "O(n log n)"
+    }
+  }
 }

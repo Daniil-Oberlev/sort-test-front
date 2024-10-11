@@ -1,95 +1,50 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Layout from "@/components/layout";
+import data from "@/texts/data.json";
+import Link from "next/link";
+import styles from "./page.module.scss";
 
 export default function Home() {
-	return (
-		<div className={styles.page}>
-			<main className={styles.main}>
-				<Image
-					className={styles.logo}
-					src='https://nextjs.org/icons/next.svg'
-					alt='Next.js logo'
-					width={180}
-					height={38}
-					priority
-				/>
-				<ol>
-					<li>
-						Get started by editing <code>app/page.tsx</code>.
-					</li>
-					<li>Save and see your changes instantly.</li>
-				</ol>
-
-				<div className={styles.ctas}>
-					<a
-						className={styles.primary}
-						href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						<Image
-							className={styles.logo}
-							src='https://nextjs.org/icons/vercel.svg'
-							alt='Vercel logomark'
-							width={20}
-							height={20}
-						/>
-						Deploy now
-					</a>
-					<a
-						href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-						target='_blank'
-						rel='noopener noreferrer'
-						className={styles.secondary}
-					>
-						Read our docs
-					</a>
-				</div>
-			</main>
-			<footer className={styles.footer}>
-				<a
-					href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					<Image
-						aria-hidden
-						src='https://nextjs.org/icons/file.svg'
-						alt='File icon'
-						width={16}
-						height={16}
-					/>
-					Learn
-				</a>
-				<a
-					href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					<Image
-						aria-hidden
-						src='https://nextjs.org/icons/window.svg'
-						alt='Window icon'
-						width={16}
-						height={16}
-					/>
-					Examples
-				</a>
-				<a
-					href='https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					<Image
-						aria-hidden
-						src='https://nextjs.org/icons/globe.svg'
-						alt='Globe icon'
-						width={16}
-						height={16}
-					/>
-					Go to nextjs.org →
-				</a>
-			</footer>
-		</div>
-	)
+  return (
+    <>
+      <Layout.Header
+        title="Sorting algorithm visualizer"
+        showBackButton={false}
+      />
+      <div className={styles.algorithm__container}>
+        <Layout.Aside description="On this site you can see various sorting algorithms. By going to them, you can learn the principles of their work, complexity, consider the visualization and see their code in the most popular programming languages" />
+        <ul className={styles.algorithm__list}>
+          <li className={styles.algorithm__item}>
+            <Link href="/bogo">{data.bogo.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/bubble">{data.bubble.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/binary">{data.binary_insertion.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/optimized__buble">{data.optimized_bubble.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/exchange">{data.exchange.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/insertion">{data.insertion.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/quick">{data.quick.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/selection">{data.selection.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/shaker">{data.shaker.title}</Link>
+          </li>
+          <li className={styles.algorithm__item}>
+            <Link href="/shell">{data.shell.title}</Link>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
 }

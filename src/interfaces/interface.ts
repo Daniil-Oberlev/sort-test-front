@@ -2,7 +2,13 @@ export interface IHeader {
   title: string;
 }
 
-export interface IAside {
+interface IComplexity {
+  worst?: string;
+  best?: string;
+  average?: string;
+}
+
+export interface IAside extends IComplexity {
   description: string;
 }
 

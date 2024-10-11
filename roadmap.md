@@ -12,3 +12,5 @@
 - OG
 - docs/
 - icons
+- shell
+- favicons

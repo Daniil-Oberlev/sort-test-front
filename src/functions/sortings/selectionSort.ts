@@ -36,6 +36,11 @@ export const selectionSortStep = (
     }
   }
 
+  if (i >= sortedArray.length - 1) {
+    i = sortedArray.length - 1;
+    j = undefined;
+  }
+
   return {
     sortedArray,
     step: { i, j, selectedIndex: minOrMaxIndex },

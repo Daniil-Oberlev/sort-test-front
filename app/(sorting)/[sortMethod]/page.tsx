@@ -17,8 +17,14 @@ const SortPage = () => {
   return (
     <>
       <Layout.Header title={config.title} />
-      <Layout.Aside description={config.description} />
-      <SortVisualizer sortStepFunction={config.step} initialCount={5} />
+      <SortVisualizer sortStepFunction={config.step} initialCount={50} />
+
+      <Layout.Aside
+        description={config.description}
+        worst={config.complexity.worst}
+        best={config.complexity.best}
+        average={config.complexity.average}
+      />
     </>
   );
 };
