@@ -23,7 +23,7 @@ export default function Home() {
             <Link href="/binary">{data.binary_insertion.title}</Link>
           </li>
           <li className={styles.algorithm__item}>
-            <Link href="/optimized__buble">{data.optimized_bubble.title}</Link>
+            <Link href="/optimized_bubble">{data.optimized_bubble.title}</Link>
           </li>
           <li className={styles.algorithm__item}>
             <Link href="/exchange">{data.exchange.title}</Link>
