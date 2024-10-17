@@ -32,6 +32,7 @@ export interface SortStep {
   i: number;
   j?: number;
   selectedIndex?: number;
+  gap?: number;
 }
 
 export type SortStepFunction = (

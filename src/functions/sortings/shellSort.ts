@@ -8,43 +8,39 @@ export const shellSortStep = (
   const sortedArray = [...arr];
   const n = sortedArray.length;
 
-  const gap = Math.floor(n / 2);
-
+  let gap = step.gap !== undefined ? step.gap : Math.floor(n / 2);
   let { i, j } = step;
 
-  if (i === undefined) {
+  if (gap <= 0) {
+    return { sortedArray, step: { i: n, j: n, gap: 0 } };
+  }
+
+  if (i === undefined || i >= n) {
     i = gap;
   }
-  if (j === undefined) {
-    j = 0;
-  }
 
-  if (gap > 0) {
-    if (i < n) {
-      const temp = sortedArray[i];
+  while (i < n) {
+    const temp = sortedArray[i];
+    j = i;
 
-      if (ascending) {
-        while (j >= gap && sortedArray[j - gap] > temp) {
-          sortedArray[j] = sortedArray[j - gap];
-          j -= gap;
-        }
-      } else {
-        while (j >= gap && sortedArray[j - gap] < temp) {
-          sortedArray[j] = sortedArray[j - gap];
-          j -= gap;
-        }
-      }
-
-      sortedArray[j] = temp;
-
-      i++;
-      if (i < n) {
-        j = i;
+    if (ascending) {
+      while (j >= gap && sortedArray[j - gap] > temp) {
+        sortedArray[j] = sortedArray[j - gap];
+        j -= gap;
       }
     } else {
-      step = { i: 0, j: undefined };
+      while (j >= gap && sortedArray[j - gap] < temp) {
+        sortedArray[j] = sortedArray[j - gap];
+        j -= gap;
+      }
     }
+
+    sortedArray[j] = temp;
+    i++;
   }
 
-  return { sortedArray, step: { i, j } };
+  gap = Math.floor(gap / 2);
+  i = gap;
+
+  return { sortedArray, step: { i, j, gap } };
 };
