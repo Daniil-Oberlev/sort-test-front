@@ -1,13 +1,14 @@
 .header {
   height: 100px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr min-content;
   align-items: center;
   gap: 45px;
   margin-bottom: 50px;
 }
 
 .header__title {
-  padding: 0 20px 0;
+  padding: 0 20px;
   height: inherit;
   width: 100%;
   font-size: 48px;

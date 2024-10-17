@@ -6,6 +6,14 @@
       "worst": "O(n²)",
       "best": "O(n log n)",
       "average": "O(n²)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/binaryInsertionSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/binaryInsertion.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/binaryInsertionSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/binaryInsertionSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/binaryInsertionSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/binaryInsertionSort.ts"
     }
   },
   "bogo": {
@@ -15,6 +23,14 @@
       "worst": "O(n!)",
       "best": "O(n)",
       "average": "O((n+1)!)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/bogoSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/bogoSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/bogoSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/bogoSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/bogoSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/bogoSort.ts"
     }
   },
   "bubble": {
@@ -24,6 +40,14 @@
       "worst": "O(n²)",
       "best": "O(n)",
       "average": "O(n²)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/bubbleSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/bubbleSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/bubbleSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/bubbleSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/bubbleSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/bubbleSort.ts"
     }
   },
   "exchange": {
@@ -33,6 +57,14 @@
       "worst": "O(n²)",
       "best": "O(n)",
       "average": "O(n²)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/exchangeSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/exchangeSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/exchangeSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/exchangeSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/exchangeSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/exchangeSort.ts"
     }
   },
   "insertion": {
@@ -42,6 +74,14 @@
       "worst": "O(n²)",
       "best": "O(n)",
       "average": "O(n²)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/insertionSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/insertionSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/insertionSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/insertionSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/insertionSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/insertionSort.ts"
     }
   },
   "optimized_bubble": {
@@ -51,6 +91,14 @@
       "worst": "O(n²)",
       "best": "O(n)",
       "average": "O(n²)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/optimizedBubbleSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/optimizedBubbleSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/optimizedBubbleSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/optimizedBubbleSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/optimizedBubbleSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/optimizedBubbleSort.ts"
     }
   },
   "quick": {
@@ -60,6 +108,14 @@
       "worst": "O(n²)",
       "best": "O(n log n)",
       "average": "O(n log n)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/quickSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/quickSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/quickSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/quickSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/quickSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/quickSort.ts"
     }
   },
   "selection": {
@@ -69,6 +125,14 @@
       "worst": "O(n²)",
       "best": "O(n²)",
       "average": "O(n²)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/selectionSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/selectionSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/selectionSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/selectionSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/selectionSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/selectionSort.ts"
     }
   },
   "shaker": {
@@ -78,6 +142,14 @@
       "worst": "O(n²)",
       "best": "O(n)",
       "average": "O(n²)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/shakerSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/shakerSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/shakerSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/shakerSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/shakerSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/shakerSort.ts"
     }
   },
   "shell": {
@@ -87,6 +159,14 @@
       "worst": "O(n²)",
       "best": "O(n log n)",
       "average": "O(n log n)"
+    },
+    "language": {
+      "cpp": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C++/shellSort.cpp",
+      "cs": "https://github.com/JlwxdQueen/Sort.PL/blob/main/C#/shellSort.cs",
+      "Go": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Go/shellSort.go",
+      "Java": "https://github.com/JlwxdQueen/Sort.PL/blob/main/Java/shellSort.java",
+      "JavaScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/JavaScript/shellSort.js",
+      "TypeScript": "https://github.com/JlwxdQueen/Sort.PL/blob/main/TypeScript/shellSort.ts"
     }
   }
 }

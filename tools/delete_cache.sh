@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Путь к директориям, которые нужно удалить
-BUILD_DIR="../build"
-DIST_DIR="../dist"
-CACHE_DIR="../node_modules/.cache"
+BUILD_DIR="./build"
+DIST_DIR="./dist"
+CACHE_DIR="./node_modules/.cache"
 
 # Удаление директории dist
 if [ -d "$DIST_DIR" ]; then

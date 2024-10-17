@@ -18,7 +18,7 @@ type SortFunction = {
 };
 
 const sortConfig: Record<string, SortFunction> = {
-  binary: {
+  binary_insertion: {
     step: sortFunctions.binaryInsertionSortStep,
     title: data.binary_insertion.title,
     description: data.binary_insertion.description,

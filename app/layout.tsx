@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Montserrat } from "next/font/google";
 import "./globals.scss";
 
 import Layout from "@/components/layout";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const font = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Сортировки",
@@ -27,9 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} page-layout`}
-      >
+      <body className={`${font.className} page-layout`}>
         <div className="main-content">{children}</div>
         <Layout.Footer />
       </body>
